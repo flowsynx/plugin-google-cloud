@@ -1,4 +1,4 @@
-# Google Cloud plugin for FlowSynx engine
+## Google Cloud plugin for FlowSynx engine
 
 The **Google Cloud Plugin** is a pre-packaged, plug-and-play integration component for the FlowSynx engine. It enables secure and configurable access to Google Cloud storage as part of FlowSynx no-code/low-code automation workflows.
 
