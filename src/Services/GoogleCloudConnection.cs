@@ -1,5 +1,4 @@
 ﻿using FlowSynx.Plugins.Google.Cloud.Models;
-using Google.Apis.Auth.OAuth2;
 using Google.Cloud.Storage.V1;
 using Newtonsoft.Json;
 
@@ -7,6 +6,15 @@ namespace FlowSynx.Plugins.Google.Cloud.Services;
 
 internal class GoogleCloudConnection: IGoogleCloudConnection
 {
+    private readonly IStorageClientFactory _factory;
+    private readonly IGoogleCredentialProvider _credentialProvider;
+
+    public GoogleCloudConnection(IStorageClientFactory factory, IGoogleCredentialProvider credentialProvider)
+    {
+        _factory = factory;
+        _credentialProvider = credentialProvider;
+    }
+
     public StorageClient Connect(GoogleCloudSpecifications specifications)
     {
         var jsonObject = new
@@ -25,7 +33,7 @@ internal class GoogleCloudConnection: IGoogleCloudConnection
         };
 
         var json = JsonConvert.SerializeObject(jsonObject);
-        var credential = GoogleCredential.FromJson(json);
-        return StorageClient.Create(credential);
+        var credential = _credentialProvider.FromJson(json);
+        return _factory.Create(credential);
     }
 }

@@ -44,7 +44,9 @@ public class GoogleCloudPlugin : IPlugin
             throw new InvalidOperationException(Resources.ReflectionBasedAccessIsNotAllowed);
 
         ArgumentNullException.ThrowIfNull(logger);
-        var connection = new GoogleCloudConnection();
+        var storageClientFactory = new StorageClientFactory();
+        var googleCredentialProvider = new GoogleCredentialProvider();
+        var connection = new GoogleCloudConnection(storageClientFactory, googleCredentialProvider);
         _googleCloudSpecifications = Specifications.ToObject<GoogleCloudSpecifications>();
         var client = connection.Connect(_googleCloudSpecifications);
         _manager = new GoogleCloudManager(logger, client, _googleCloudSpecifications.BucketName);
