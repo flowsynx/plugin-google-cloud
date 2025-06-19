@@ -30,7 +30,8 @@ public class GoogleCloudPlugin : IPlugin
                 ReadMe = "README.md",
                 RepositoryUrl = "https://github.com/flowsynx/plugin-google-cloud",
                 ProjectUrl = "https://flowsynx.io",
-                Tags = new List<string>() { "FlowSynx", "Google", "Storage", "Cloud" }
+                Tags = new List<string>() { "FlowSynx", "Google", "Storage", "Cloud" },
+                Category = PluginCategories.CloudPlatform
             };
         }
     }

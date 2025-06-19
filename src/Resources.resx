@@ -133,7 +133,7 @@
     <value>No files found with the given filter in '{0}'.</value>
   </data>
   <data name="PluginDescription" xml:space="preserve">
-    <value>Connector for managing Google Cloud Storage system.</value>
+    <value>Provides base integration with GCP services for generalized access and operations across multiple APIs. Serves as a foundation for other GCP-specific connectors.</value>
   </data>
   <data name="ReflectionBasedAccessIsNotAllowed" xml:space="preserve">
     <value>Reflection-based access is not allowed.</value>

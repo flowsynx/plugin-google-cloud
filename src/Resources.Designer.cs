@@ -106,7 +106,7 @@ namespace FlowSynx.Plugins.Google.Cloud {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Connector for managing Google Cloud Storage system..
+        ///   Looks up a localized string similar to Provides base integration with GCP services for generalized access and operations across multiple APIs. Serves as a foundation for other GCP-specific connectors..
         /// </summary>
         internal static string PluginDescription {
             get {
