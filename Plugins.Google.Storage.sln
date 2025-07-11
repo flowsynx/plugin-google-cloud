@@ -9,7 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FF536EB7-E71
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{CB17BEC8-E00B-49DA-AD14-8F8CDA9C0346}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlowSynx.Plugins.Google.Storage.UnitTests", "tests\FlowSynx.Plugins.Google.Cloud.UnitTests\FlowSynx.Plugins.Google.Storage.UnitTests.csproj", "{A964945D-3193-4B20-8E17-8CAF9F53E21D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlowSynx.Plugins.Google.Storage.UnitTests", "tests\FlowSynx.Plugins.Google.Storage.UnitTests.csproj", "{A964945D-3193-4B20-8E17-8CAF9F53E21D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
