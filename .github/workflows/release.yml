@@ -40,13 +40,13 @@ jobs:
         run: dotnet test --configuration Release /p:Version='${{ inputs.rel_version }}' --no-build
 
       - name: Publish project
-        run: dotnet publish src/FlowSynx.Plugins.Google.Cloud.csproj -c Release -o "${{ env.PUBLISH_DIR }}"
+        run: dotnet publish src/FlowSynx.Plugins.Google.Storage.csproj -c Release -o "${{ env.PUBLISH_DIR }}"
 
       - name: Package release artifacts
         run: |
           mkdir -p "${{ env.DIST_DIR }}"
           cd "${{ env.PUBLISH_DIR }}"
-          7z a -tzip "${{ env.DIST_DIR }}/flowsynx.google.cloud.${{ inputs.rel_version }}.zip" *
+          7z a -tzip "${{ env.DIST_DIR }}/flowsynx.google.storage.${{ inputs.rel_version }}.zip" *
 
       - name: Upload release artifacts
         uses: actions/upload-artifact@v4
@@ -76,10 +76,10 @@ jobs:
         uses: ncipollo/release-action@v1
         with:
           tag: v${{ inputs.rel_version }}
-          name: Google Cloud Plugin v${{ inputs.rel_version }}
+          name: Google Cloud Storage Plugin v${{ inputs.rel_version }}
           artifacts: "${{ env.DOWNLOAD_DIR }}/**/*.*"
           body: |
-            This is the v${{ inputs.rel_version }} release of Google Cloud Plugin for FlowSynx System.
+            This is the v${{ inputs.rel_version }} release of Google Cloud Storage Plugin for FlowSynx System.
           token: ${{ secrets.GH_TOKEN }}
 
   create-branch:
