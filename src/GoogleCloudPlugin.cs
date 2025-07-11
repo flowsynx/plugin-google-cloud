@@ -1,10 +1,10 @@
-﻿using FlowSynx.Plugins.Google.Cloud.Models;
-using FlowSynx.Plugins.Google.Cloud.Services;
+﻿using FlowSynx.Plugins.Google.Storage.Models;
+using FlowSynx.Plugins.Google.Storage.Services;
 using FlowSynx.PluginCore;
 using FlowSynx.PluginCore.Helpers;
 using FlowSynx.PluginCore.Extensions;
 
-namespace FlowSynx.Plugins.Google.Cloud;
+namespace FlowSynx.Plugins.Google.Storage;
 
 public class GoogleCloudPlugin : IPlugin
 {
@@ -12,28 +12,23 @@ public class GoogleCloudPlugin : IPlugin
     private GoogleCloudSpecifications? _googleCloudSpecifications;
     private bool _isInitialized;
 
-    public PluginMetadata Metadata
+    public PluginMetadata Metadata => new PluginMetadata
     {
-        get
-        {
-            return new PluginMetadata
-            {
-                Id = Guid.Parse("d3c52770-f001-4ea3-93b7-f113a956a091"),
-                Name = "Google.Cloud",
-                CompanyName = "FlowSynx",
-                Description = Resources.PluginDescription,
-                Version = new PluginVersion(1, 0, 0),
-                Category = PluginCategory.Cloud,
-                Authors = new List<string> { "FlowSynx" },
-                Copyright = "© FlowSynx. All rights reserved.",
-                Icon = "flowsynx.png",
-                ReadMe = "README.md",
-                RepositoryUrl = "https://github.com/flowsynx/plugin-google-cloud",
-                ProjectUrl = "https://flowsynx.io",
-                Tags = new List<string>() { "FlowSynx", "Google", "Storage", "Cloud" },
-            };
-        }
-    }
+        Id = Guid.Parse("d3c52770-f001-4ea3-93b7-f113a956a091"),
+        Name = "Google.Storage",
+        CompanyName = "FlowSynx",
+        Description = Resources.PluginDescription,
+        Version = new Version(1, 0, 0),
+        Category = PluginCategory.Cloud,
+        Authors = new List<string> { "FlowSynx" },
+        Copyright = "© FlowSynx. All rights reserved.",
+        Icon = "flowsynx.png",
+        ReadMe = "README.md",
+        RepositoryUrl = "https://github.com/flowsynx/plugin-google-cloud",
+        ProjectUrl = "https://flowsynx.io",
+        Tags = new List<string>() { "FlowSynx", "Google", "Storage", "Cloud" },
+        MinimumFlowSynxVersion = new Version(1, 1, 1),
+    };
 
     public PluginSpecifications? Specifications { get; set; }
     public Type SpecificationsType => typeof(GoogleCloudSpecifications);

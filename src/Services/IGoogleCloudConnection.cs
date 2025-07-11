@@ -1,7 +1,7 @@
-﻿using FlowSynx.Plugins.Google.Cloud.Models;
+﻿using FlowSynx.Plugins.Google.Storage.Models;
 using Google.Cloud.Storage.V1;
 
-namespace FlowSynx.Plugins.Google.Cloud.Services;
+namespace FlowSynx.Plugins.Google.Storage.Services;
 
 public interface IGoogleCloudConnection
 {

@@ -1,4 +1,4 @@
-﻿using FlowSynx.Plugins.Google.Cloud.Extensions;
+﻿using FlowSynx.Plugins.Google.Storage.Extensions;
 using System.Text;
 
 namespace FlowSynx.Plugins.Google.Cloud.UnitTests.Extensions;

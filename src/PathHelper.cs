@@ -1,4 +1,4 @@
-﻿namespace FlowSynx.Plugins.Google.Cloud;
+﻿namespace FlowSynx.Plugins.Google.Storage;
 
 /// <summary>
 /// Path utilities

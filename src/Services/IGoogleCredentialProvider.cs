@@ -1,6 +1,6 @@
 ﻿using Google.Apis.Auth.OAuth2;
 
-namespace FlowSynx.Plugins.Google.Cloud.Services;
+namespace FlowSynx.Plugins.Google.Storage.Services;
 
 public interface IGoogleCredentialProvider
 {

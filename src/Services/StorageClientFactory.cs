@@ -1,7 +1,7 @@
 ﻿using Google.Apis.Auth.OAuth2;
 using Google.Cloud.Storage.V1;
 
-namespace FlowSynx.Plugins.Google.Cloud.Services;
+namespace FlowSynx.Plugins.Google.Storage.Services;
 
 internal class StorageClientFactory : IStorageClientFactory
 {

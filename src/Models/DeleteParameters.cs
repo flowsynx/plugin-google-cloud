@@ -1,4 +1,4 @@
-﻿namespace FlowSynx.Plugins.Google.Cloud.Models;
+﻿namespace FlowSynx.Plugins.Google.Storage.Models;
 
 internal class DeleteParameters
 {

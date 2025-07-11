@@ -1,10 +1,10 @@
-﻿using FlowSynx.Plugins.Google.Cloud.Models;
-using FlowSynx.Plugins.Google.Cloud.Services;
+﻿using FlowSynx.Plugins.Google.Storage.Models;
+using FlowSynx.Plugins.Google.Storage.Services;
 using Google.Apis.Auth.OAuth2;
 using Google.Cloud.Storage.V1;
 using Moq;
 
-namespace FlowSynx.Plugins.Google.Cloud.UnitTests.Services;
+namespace FlowSynx.Plugins.Google.Storage.UnitTests.Services;
 
 public class GoogleCloudConnectionTests
 {

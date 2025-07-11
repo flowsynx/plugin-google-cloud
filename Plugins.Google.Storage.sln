@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.12.35728.132
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlowSynx.Plugins.Google.Cloud", "src\FlowSynx.Plugins.Google.Cloud.csproj", "{281BDF58-0FDA-468F-9702-321A28A96CF5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlowSynx.Plugins.Google.Storage", "src\FlowSynx.Plugins.Google.Storage.csproj", "{281BDF58-0FDA-468F-9702-321A28A96CF5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FF536EB7-E710-4C7A-AA69-EC609F67D37D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{CB17BEC8-E00B-49DA-AD14-8F8CDA9C0346}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlowSynx.Plugins.Google.Cloud.UnitTests", "tests\FlowSynx.Plugins.Google.Cloud.UnitTests\FlowSynx.Plugins.Google.Cloud.UnitTests.csproj", "{A964945D-3193-4B20-8E17-8CAF9F53E21D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlowSynx.Plugins.Google.Storage.UnitTests", "tests\FlowSynx.Plugins.Google.Cloud.UnitTests\FlowSynx.Plugins.Google.Storage.UnitTests.csproj", "{A964945D-3193-4B20-8E17-8CAF9F53E21D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

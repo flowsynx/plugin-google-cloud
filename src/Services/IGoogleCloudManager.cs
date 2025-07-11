@@ -1,6 +1,6 @@
 ﻿using FlowSynx.PluginCore;
 
-namespace FlowSynx.Plugins.Google.Cloud.Services;
+namespace FlowSynx.Plugins.Google.Storage.Services;
 
 public interface IGoogleCloudManager
 {

@@ -1,8 +1,8 @@
-﻿using FlowSynx.Plugins.Google.Cloud.Models;
+﻿using FlowSynx.Plugins.Google.Storage.Models;
 using Google.Cloud.Storage.V1;
 using Newtonsoft.Json;
 
-namespace FlowSynx.Plugins.Google.Cloud.Services;
+namespace FlowSynx.Plugins.Google.Storage.Services;
 
 internal class GoogleCloudConnection: IGoogleCloudConnection
 {

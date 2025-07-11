@@ -1,4 +1,4 @@
-﻿namespace FlowSynx.Plugins.Google.Cloud.Extensions;
+﻿namespace FlowSynx.Plugins.Google.Storage.Extensions;
 
 internal static class ByteExtensions
 {

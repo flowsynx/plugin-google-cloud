@@ -3,7 +3,7 @@ using Google.Cloud.Storage.V1;
 using System.Text;
 using Object = Google.Apis.Storage.v1.Data.Object;
 
-namespace FlowSynx.Plugins.Google.Cloud.Extensions;
+namespace FlowSynx.Plugins.Google.Storage.Extensions;
 
 static class ConverterExtensions
 {

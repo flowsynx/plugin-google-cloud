@@ -4,11 +4,11 @@ using System.Net;
 using System.Text;
 using FlowSynx.PluginCore;
 using FlowSynx.PluginCore.Extensions;
-using FlowSynx.Plugins.Google.Cloud.Models;
-using FlowSynx.Plugins.Google.Cloud.Extensions;
+using FlowSynx.Plugins.Google.Storage.Models;
+using FlowSynx.Plugins.Google.Storage.Extensions;
 using System.Text.RegularExpressions;
 
-namespace FlowSynx.Plugins.Google.Cloud.Services;
+namespace FlowSynx.Plugins.Google.Storage.Services;
 
 internal class GoogleCloudManager : IGoogleCloudManager
 {

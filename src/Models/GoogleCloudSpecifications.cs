@@ -1,6 +1,6 @@
 ﻿using FlowSynx.PluginCore;
 
-namespace FlowSynx.Plugins.Google.Cloud.Models;
+namespace FlowSynx.Plugins.Google.Storage.Models;
 
 public class GoogleCloudSpecifications : PluginSpecifications
 {

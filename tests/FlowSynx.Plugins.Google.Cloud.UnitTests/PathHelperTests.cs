@@ -1,4 +1,4 @@
-﻿namespace FlowSynx.Plugins.Google.Cloud.UnitTests;
+﻿namespace FlowSynx.Plugins.Google.Storage.UnitTests;
 
 public class PathHelperTests
 {
